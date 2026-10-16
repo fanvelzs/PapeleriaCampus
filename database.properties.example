@@ -1,0 +1,4 @@
+# Copiar a database.properties (excluido de Git). No guardar credenciales en el repositorio.
+db.url=jdbc:postgresql://localhost:5432/papeleria_campus
+db.user=postgres
+db.password=CAMBIAR_LOCALMENTE
