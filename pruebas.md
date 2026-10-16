@@ -81,4 +81,4 @@ Primera ejecución de la validación: **FALLÓ** el subcaso V3 sin categoría po
 
 Ocho capturas PNG, tres reportes TXT de JUnit, tres reportes XML de JUnit, el log de Maven y un SELECT final del conteo. Los PNG complementan los tests reproducibles y el código; no sustituyen la conexión real. La base de prueba termina restaurada con 12 registros, de los cuales 9 tienen existencias.
 
-La cuenta GitHub dispone de un repositorio privado. Queda pendiente que Fanor indique el usuario del docente para habilitar su acceso; no se presume un acceso que no se haya concedido.
+

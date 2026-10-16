@@ -1,14 +1,6 @@
 # Papelería Campus
 
-Laboratorio de TableView, JDBC y CRUD de productos.
-
-**Autor:** Fanor Velasquez. **Grupo:** 3. **Fecha de verificación:** 15 de octubre de 2026 (America/Managua).
-
-Repositorio: https://github.com/fanvelzs/PapeleriaCampus (privado). Para dar acceso al docente, agregar su usuario en Settings > Collaborators. Falta que el autor indique ese usuario.
-
-## Requisitos y versiones utilizadas
-
-Windows, JDK Temurin 21.0.12, JavaFX 21.0.6, PostgreSQL 18, pgJDBC 42.7.3, Maven Wrapper 3.8.5 y JUnit 5.12.1. Maven descarga las dependencias del `pom.xml`; no hace falta instalar JavaFX manualmente. Se requiere conexión a internet durante la primera compilación. Java 8 no es compatible; compruebe `JAVA_HOME` antes de ejecutar.
+**Autor:** Fanor Velasquez. **Grupo:** 3. **Fecha de verificación:** 15 de octubre de 2026.
 
 ## Crear y seleccionar la base de datos
 
