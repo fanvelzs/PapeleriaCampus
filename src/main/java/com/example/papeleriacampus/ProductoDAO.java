@@ -70,7 +70,7 @@ public final class ProductoDAO {
     }
 
     private static SQLException registrar(String operacion, SQLException e) {
-        // No registrar URL, contraseña, formulario ni trazas del driver.
+
         LOG.warning("Operación=" + operacion + "; SQLState=" + e.getSQLState());
         return e;
     }

@@ -17,7 +17,7 @@ public final class ProductoValidator {
             throw new IllegalArgumentException("El código debe tener de 1 a 10 caracteres.");
         if (length(nombre) < 3 || length(nombre) > 80)
             throw new IllegalArgumentException("El nombre debe tener de 3 a 80 caracteres.");
-        if (!CATEGORIAS.contains(categoria))
+        if (categoria == null || !CATEGORIAS.contains(categoria))
             throw new IllegalArgumentException("Seleccione Papelería, Tecnología o Accesorios.");
         String rawPrecio = clean(precioTexto);
         if (!rawPrecio.matches("-?[0-9]+(?:\\.[0-9]+)?"))
