@@ -73,6 +73,8 @@ También se comprueban código de 10 caracteres, nombre de 80, precio 0.01 y 999
 
 ## Incidencias detectadas y resueltas
 
+Scene Builder integrado de IntelliJ mostraba el editor en blanco. El registro del IDE identificó `NoSuchFieldException: CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN` al cargar el FXML. Se trasladó esa configuración al método initialize del controlador y se añadió un tamaño de diseño al BorderPane. Se volvió a ejecutar `clean verify`: 12 pruebas aprobadas. La carga de la aplicación conserva la misma política de columnas y el FXML ya no hace referencia a la constante incompatible con el editor.
+
 Primera ejecución de la validación: **FALLÓ** el subcaso V3 sin categoría por NullPointerException al consultar `List.of(...).contains(null)`. Se añadió una comprobación explícita de null antes de buscar la categoría. La segunda ejecución de las 8 pruebas de validador/DAO pasó y la ejecución integral de 12 también pasó. No se ocultó el fallo inicial.
 
 ## Evidencias entregadas y límites

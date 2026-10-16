@@ -51,6 +51,8 @@ $env:JAVA_HOME='C:\Users\fanvelzs\.jdks\temurin-21.0.12.1' # Ajustar en otra com
 
 En IntelliJ, abrir `pom.xml` como proyecto Maven, seleccionar SDK 21 y ejecutar la tarea Maven `javafx:run`. La clase `Launcher` también permite iniciar `HelloApplication` con las dependencias configuradas por el IDE.
 
+Para editar la interfaz, abrir `src/main/resources/com/example/papeleriacampus/hello-view.fxml` y seleccionar la pestaña Scene Builder. El FXML tiene tamaño de diseño explícito y usa controles básicos; la política de ajuste de columnas de JavaFX 21 se configura en el controlador para que también lo abra el Scene Builder integrado en versiones del IDE con JavaFX anterior a 20. Si el editor estaba en blanco, cerrar la pestaña del archivo y volver a abrirla.
+
 Buscar consulta PostgreSQL con texto parcial sobre nombre O código, categoría y existencias combinados con AND. Pulse Buscar o Enter en el texto para aplicar los filtros. Recargar conserva los controles actuales. Limpiar filtros los restablece; Nuevo / Limpiar formulario solo limpia el formulario.
 
 Para crear, pulse Nuevo, llene los cinco campos y Guardar. Para editar, seleccione una fila y pulse Actualizar. El ID es de solo lectura. Eliminar pide confirmación; Cancelar conserva la fila. Después de cada escritura se vuelve a consultar PostgreSQL respetando los filtros. Los mensajes se muestran en la franja inferior. Una conexión fallida conserva el listado anterior marcado como sin verificar; no se anuncia una búsqueda exitosa con cero filas.

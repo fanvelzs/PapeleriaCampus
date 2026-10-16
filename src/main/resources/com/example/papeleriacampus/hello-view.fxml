@@ -2,7 +2,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.papeleriacampus.PapeleriaCampusController">
+<BorderPane prefWidth="1180" prefHeight="780" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.papeleriacampus.PapeleriaCampusController">
     <top>
         <VBox spacing="5">
             <padding><Insets top="12" right="24" bottom="0" left="24"/></padding>
@@ -35,7 +35,6 @@
                         <Label fx:id="contador" text="Sin cargar"/>
                     </HBox>
                     <TableView fx:id="tabla" VBox.vgrow="ALWAYS">
-                        <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN"/></columnResizePolicy>
                         <columns>
                             <TableColumn fx:id="colId" text="ID" prefWidth="45"/>
                             <TableColumn fx:id="colCodigo" text="Código" prefWidth="75"/>

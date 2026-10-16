@@ -30,41 +30,41 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.example.papeleriacampus.InterfazIntegrationTest
-oct 15, 2026 6:42:01 P. M. com.sun.javafx.application.PlatformImpl startup
+oct 15, 2026 6:48:30 P. M. com.sun.javafx.application.PlatformImpl startup
 ADVERTENCIA: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @5891e32e'
-oct 15, 2026 6:42:07 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:35 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=buscar; SQLState=08001
-oct 15, 2026 6:42:11 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:39 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23505
-oct 15, 2026 6:42:11 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:39 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=actualizar; SQLState=23505
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.19 s -- in com.example.papeleriacampus.InterfazIntegrationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.32 s -- in com.example.papeleriacampus.InterfazIntegrationTest
 [INFO] Running com.example.papeleriacampus.ProductoDAOIntegrationTest
-oct 15, 2026 6:42:21 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:44 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23505
-oct 15, 2026 6:42:21 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:44 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=actualizar; SQLState=23505
-oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:45 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:45 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:45 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:45 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:45 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:45 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:42:23 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:45 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:42:23 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:45 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23502
-oct 15, 2026 6:42:26 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:48:49 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=buscar; SQLState=08001
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.551 s -- in com.example.papeleriacampus.ProductoDAOIntegrationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.260 s -- in com.example.papeleriacampus.ProductoDAOIntegrationTest
 [INFO] Running com.example.papeleriacampus.ProductoValidatorTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s -- in com.example.papeleriacampus.ProductoValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.080 s -- in com.example.papeleriacampus.ProductoValidatorTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -76,6 +76,6 @@ ADVERTENCIA: Operación=buscar; SQLState=08001
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  33.437 s
-[INFO] Finished at: 2026-10-15T18:42:28-06:00
+[INFO] Total time:  24.664 s
+[INFO] Finished at: 2026-10-15T18:48:51-06:00
 [INFO] ------------------------------------------------------------------------
