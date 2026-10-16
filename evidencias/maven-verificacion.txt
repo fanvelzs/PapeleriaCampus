@@ -1,0 +1,81 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:PapeleriaCampus >---------------------
+[INFO] Building PapeleriaCampus 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ PapeleriaCampus ---
+[INFO] Deleting C:\Users\fanvelzs\Documents\ChatGPT\PapeleriaCampus\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ PapeleriaCampus ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ PapeleriaCampus ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 8 source files with javac [debug release 21 module-path] to target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ PapeleriaCampus ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\fanvelzs\Documents\ChatGPT\PapeleriaCampus\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ PapeleriaCampus ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [debug release 21 module-path] to target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.2:test (default-test) @ PapeleriaCampus ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.papeleriacampus.InterfazIntegrationTest
+oct 15, 2026 6:38:46 P. M. com.sun.javafx.application.PlatformImpl startup
+ADVERTENCIA: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @5891e32e'
+oct 15, 2026 6:38:57 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=buscar; SQLState=08001
+oct 15, 2026 6:39:06 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23505
+oct 15, 2026 6:39:06 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=actualizar; SQLState=23505
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.85 s -- in com.example.papeleriacampus.InterfazIntegrationTest
+[INFO] Running com.example.papeleriacampus.ProductoDAOIntegrationTest
+oct 15, 2026 6:39:13 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23505
+oct 15, 2026 6:39:13 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=actualizar; SQLState=23505
+oct 15, 2026 6:39:13 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23514
+oct 15, 2026 6:39:13 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23514
+oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23514
+oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23514
+oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23514
+oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23514
+oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23514
+oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=insertar; SQLState=23502
+oct 15, 2026 6:39:18 P. M. com.example.papeleriacampus.ProductoDAO registrar
+ADVERTENCIA: Operación=buscar; SQLState=08001
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.879 s -- in com.example.papeleriacampus.ProductoDAOIntegrationTest
+[INFO] Running com.example.papeleriacampus.ProductoValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s -- in com.example.papeleriacampus.ProductoValidatorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ PapeleriaCampus ---
+[INFO] Building jar: C:\Users\fanvelzs\Documents\ChatGPT\PapeleriaCampus\target\PapeleriaCampus-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  49.489 s
+[INFO] Finished at: 2026-10-15T18:39:21-06:00
+[INFO] ------------------------------------------------------------------------

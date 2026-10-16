@@ -35,6 +35,18 @@ class ProductoDAOIntegrationTest {
         return ProductoValidator.validar(null, "X001", "Producto de prueba", "Accesorios", "10.00", "1");
     }
 
+    private static void nuevaJVM(String... argumentos) throws Exception {
+        var comando = new java.util.ArrayList<>(List.of(
+                Path.of(System.getProperty("java.home"), "bin", "java").toString(), "-cp",
+                System.getProperty("surefire.test.class.path", System.getProperty("java.class.path")),
+                PersistenciaProbe.class.getName()));
+        comando.addAll(List.of(argumentos));
+        Process proceso = new ProcessBuilder(comando).redirectErrorStream(true).start();
+        assertTrue(proceso.waitFor(15, java.util.concurrent.TimeUnit.SECONDS));
+        String salida = new String(proceso.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+        assertEquals(0, proceso.exitValue(), salida); assertTrue(salida.contains("PERSISTENCIA_OK"), salida);
+    }
+
     @Test void b1AB7ConsultaRealYRecargaExterna() throws Exception {
         ProductoDAO d = dao();
         assertEquals(List.of("P001", "P002"), codes(d.buscar("CUADERNO", null, false)));
@@ -57,15 +69,18 @@ class ProductoDAOIntegrationTest {
     @Test void cicloCrudPersistenciaYFiltros() throws Exception {
         ProductoDAO d = dao();
         int id = d.insertar(prueba());
+        nuevaJVM("13", "10.00", "1");
         assertEquals(13, dao().buscar("", null, false).size());
         assertEquals(new BigDecimal("10.00"), dao().buscar("X001", null, false).getFirst().precio());
         Producto modificado = ProductoValidator.validar(id, "X001", "Producto de prueba", "Accesorios", "15.50", "3");
         assertTrue(d.actualizar(modificado));
+        nuevaJVM("13", "15.50", "3");
         assertEquals(modificado, dao().buscar("X001", null, false).getFirst());
         assertEquals(13, dao().buscar("", null, false).size());
         assertTrue(d.actualizar(ProductoValidator.validar(id,"X001","Producto de prueba","Accesorios","15.50","0")));
         assertTrue(d.buscar("X001", "Accesorios", true).isEmpty());
         assertTrue(d.eliminar(id)); assertEquals(12, dao().buscar("", null, false).size());
+        nuevaJVM("12");
         assertFalse(d.actualizar(modificado)); assertFalse(d.eliminar(id));
     }
 

@@ -1,0 +1,5 @@
+ productos | con_existencias 
+-----------+-----------------
+        12 |               9
+(1 row)
+

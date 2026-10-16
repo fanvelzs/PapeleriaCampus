@@ -166,7 +166,7 @@ public final class PapeleriaCampusController {
         boolean existencias = soloExistencias.isSelected();
         ejecutar(() -> {
             boolean cambiado = operacion.call();
-            // Una escritura confirmada y una recarga fallida son resultados diferentes.
+
             try { return new Resultado(cambiado, dao.buscar(texto, filtro, existencias), null); }
             catch (SQLException e) { return new Resultado(cambiado, null, e); }
         }, r -> {
