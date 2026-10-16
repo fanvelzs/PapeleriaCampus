@@ -8,7 +8,7 @@ Entorno: Windows, Temurin 21.0.12, JavaFX 21.0.6, PostgreSQL 18 local en 127.0.0
 
 Se ejecutan 12 métodos JUnit: 3 de validación, 5 de DAO/JDBC real y 4 de interfaz con FXML real. Cada método recorre varios casos del enunciado. Las capturas son píxeles obtenidos de `Scene.snapshot` durante la ejecución; no son maquetas. El resultado esperado se compara mediante aserciones. La confirmación Aceptar/Cancelar se inyecta en los tests para recorrer ambas decisiones; la aplicación final muestra un Alert modal. Los resultados de INSERT, UPDATE y DELETE se comprueban con nuevas consultas y con **tres procesos JVM independientes**, además de volver a abrir el controlador JavaFX.
 
-Comando de verificación (con JAVA_HOME 21 y variables de prueba configuradas como indica README): `mvnw.cmd -B clean verify`.
+Comando de verificación (con JAVA_HOME 21 y variables de prueba configuradas como indica README): `mvnw.cmd -B clean verify`. La verificación y las ocho capturas se actualizaron con la interfaz básica de JavaFX, sin CSS personalizado.
 
 Resultado final: **12 pruebas, 0 fallos, 0 errores, 0 omitidas**. Ver [log completo](evidencias/maven-verificacion.txt) y [reportes JUnit](evidencias/). Las advertencias SQLState 23505/23514/23502/08001 corresponden a errores provocados y gestionados deliberadamente. JavaFX avisa que los tests cargan clases desde el classpath; el lanzamiento normal usa el module-path y también fue ejecutado.
 

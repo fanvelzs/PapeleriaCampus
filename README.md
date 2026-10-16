@@ -57,7 +57,7 @@ Para crear, pulse Nuevo, llene los cinco campos y Guardar. Para editar, seleccio
 
 ## Organización y flujo
 
-`hello-view.fxml` y `campus.css` definen la interfaz. `PapeleriaCampusController` recibe las acciones y valida mediante `ProductoValidator`; transforma los resultados del DAO en `ObservableList<Producto>` para el TableView. `Producto` es el modelo inmutable y usa BigDecimal. `ProductoDAO` contiene todo el SQL de aplicación y usa PreparedStatement, ResultSet y try-with-resources. `DatabaseConnection` obtiene la conexión mediante configuración externa.
+`hello-view.fxml` define una interfaz básica con los controles y el aspecto predeterminado de JavaFX, sin CSS personalizado. `PapeleriaCampusController` recibe las acciones y valida mediante `ProductoValidator`; transforma los resultados del DAO en `ObservableList<Producto>` para el TableView. `Producto` es el modelo inmutable y usa BigDecimal. `ProductoDAO` contiene todo el SQL de aplicación y usa PreparedStatement, ResultSet y try-with-resources. `DatabaseConnection` obtiene la conexión mediante configuración externa.
 
 Flujo: **interfaz > controlador > validador > DAO > JDBC > PostgreSQL > ResultSet > Producto > ObservableList > TableView**. Las consultas y escrituras se ejecutan en una Task para que la interfaz no se congele. Durante la operación se bloquean controles para evitar envíos dobles. UPDATE y DELETE usan exclusivamente `id_producto`; cero filas afectadas produce una advertencia. Las excepciones registran operación y SQLState sin contraseñas ni trazas del driver.
 

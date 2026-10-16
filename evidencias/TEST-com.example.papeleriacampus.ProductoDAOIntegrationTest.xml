@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="5.879" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="5.551" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="javafx.runtime.version" value="21.0.6+3"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="MX"/>
     <property name="sun.boot.library.path" value="C:\Users\fanvelzs\.jdks\temurin-21.0.12.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\fanvelzs\AppData\Local\Temp\surefire11493653516545105123\surefirebooter-20261015183844595_3.jar C:\Users\fanvelzs\AppData\Local\Temp\surefire11493653516545105123 2026-10-15T18-38-43_823-jvmRun1 surefire-20261015183844595_1tmp surefire_0-20261015183844595_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\fanvelzs\AppData\Local\Temp\surefire10584822436087410173\surefirebooter-20261015184200303_3.jar C:\Users\fanvelzs\AppData\Local\Temp\surefire10584822436087410173 2026-10-15T18-41-59_884-jvmRun1 surefire-20261015184200303_1tmp surefire_0-20261015184200303_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\fanvelzs\Documents\ChatGPT\PapeleriaCampus\target\test-classes;C:\Users\fanvelzs\Documents\ChatGPT\PapeleriaCampus\target\classes;C:\Users\fanvelzs\.m2\repository\org\openjfx\javafx-controls\21.0.6\javafx-controls-21.0.6.jar;C:\Users\fanvelzs\.m2\repository\org\openjfx\javafx-controls\21.0.6\javafx-controls-21.0.6-win.jar;C:\Users\fanvelzs\.m2\repository\org\openjfx\javafx-graphics\21.0.6\javafx-graphics-21.0.6.jar;C:\Users\fanvelzs\.m2\repository\org\openjfx\javafx-graphics\21.0.6\javafx-graphics-21.0.6-win.jar;C:\Users\fanvelzs\.m2\repository\org\openjfx\javafx-base\21.0.6\javafx-base-21.0.6.jar;C:\Users\fanvelzs\.m2\repository\org\openjfx\javafx-base\21.0.6\javafx-base-21.0.6-win.jar;C:\Users\fanvelzs\.m2\repository\org\openjfx\javafx-fxml\21.0.6\javafx-fxml-21.0.6.jar;C:\Users\fanvelzs\.m2\repository\org\openjfx\javafx-fxml\21.0.6\javafx-fxml-21.0.6-win.jar;C:\Users\fanvelzs\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\fanvelzs\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\fanvelzs\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.1\junit-jupiter-api-5.12.1.jar;C:\Users\fanvelzs\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\fanvelzs\.m2\repository\org\junit\platform\junit-platform-commons\1.12.1\junit-platform-commons-1.12.1.jar;C:\Users\fanvelzs\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\fanvelzs\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.1\junit-jupiter-engine-5.12.1.jar;C:\Users\fanvelzs\.m2\repository\org\junit\platform\junit-platform-engine\1.12.1\junit-platform-engine-1.12.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\fanvelzs\AppData\Local\Temp\surefire11493653516545105123\surefirebooter-20261015183844595_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\fanvelzs\AppData\Local\Temp\surefire10584822436087410173\surefirebooter-20261015184200303_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-LTS"/>
@@ -61,36 +61,36 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="v9DuplicadosYEdicionPropia" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="0.726">
-    <system-err><![CDATA[oct 15, 2026 6:39:13 P. M. com.example.papeleriacampus.ProductoDAO registrar
+  <testcase name="v9DuplicadosYEdicionPropia" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="0.557">
+    <system-err><![CDATA[oct 15, 2026 6:42:21 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23505
-oct 15, 2026 6:39:13 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:42:21 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=actualizar; SQLState=23505
 ]]></system-err>
   </testcase>
-  <testcase name="e2RestriccionesDirectasDelDao" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="1.092">
-    <system-err><![CDATA[oct 15, 2026 6:39:13 P. M. com.example.papeleriacampus.ProductoDAO registrar
+  <testcase name="e2RestriccionesDirectasDelDao" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="1.247">
+    <system-err><![CDATA[oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:39:13 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:42:22 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:42:23 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23514
-oct 15, 2026 6:39:14 P. M. com.example.papeleriacampus.ProductoDAO registrar
+oct 15, 2026 6:42:23 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=insertar; SQLState=23502
 ]]></system-err>
   </testcase>
-  <testcase name="cicloCrudPersistenciaYFiltros" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="2.277"/>
-  <testcase name="b1AB7ConsultaRealYRecargaExterna" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="1.285"/>
-  <testcase name="e1E3E4ConexionCeroFilasYDiagnosticoSeguro" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="0.486">
-    <system-err><![CDATA[oct 15, 2026 6:39:18 P. M. com.example.papeleriacampus.ProductoDAO registrar
+  <testcase name="cicloCrudPersistenciaYFiltros" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="2.456"/>
+  <testcase name="b1AB7ConsultaRealYRecargaExterna" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="0.791"/>
+  <testcase name="e1E3E4ConexionCeroFilasYDiagnosticoSeguro" classname="com.example.papeleriacampus.ProductoDAOIntegrationTest" time="0.497">
+    <system-err><![CDATA[oct 15, 2026 6:42:26 P. M. com.example.papeleriacampus.ProductoDAO registrar
 ADVERTENCIA: Operación=buscar; SQLState=08001
 ]]></system-err>
   </testcase>

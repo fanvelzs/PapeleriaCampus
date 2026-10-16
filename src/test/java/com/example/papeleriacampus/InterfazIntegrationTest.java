@@ -49,7 +49,6 @@ class InterfazIntegrationTest {
             loader.setControllerFactory(type -> new PapeleriaCampusController(dao, avisos::add, p -> confirmar));
             root = loader.load(); c = loader.getController();
             Scene scene = new Scene(root,1180,780);
-            scene.getStylesheets().add(HelloApplication.class.getResource("campus.css").toExternalForm());
             stage = new Stage(); stage.setScene(scene); stage.setTitle("Papelería Campus · Pruebas"); stage.show();
             return null;
         });
