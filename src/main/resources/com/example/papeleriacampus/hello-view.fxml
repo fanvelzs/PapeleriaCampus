@@ -1,82 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.Insets?>
+
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<BorderPane prefWidth="1180" prefHeight="780" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.papeleriacampus.PapeleriaCampusController">
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="780" prefWidth="1180" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.papeleriacampus.PapeleriaCampusController">
     <top>
         <VBox spacing="5">
-            <padding><Insets top="12" right="24" bottom="0" left="24"/></padding>
-            <Label text="Papelería Campus"/>
-            <Label text="CATÁLOGO DE PRODUCTOS   /   Precios y existencias"/>
+            <padding><Insets bottom="0" left="24" right="24" top="12" /></padding>
+            <Label text="Papelería Campus">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font></Label>
+            <Label text="CATÁLOGO DE PRODUCTOS   /   Precios y existencias">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
         </VBox>
     </top>
     <center>
         <VBox spacing="14">
-            <padding><Insets top="18" right="24" bottom="14" left="24"/></padding>
-            <HBox fx:id="filtros" spacing="10" alignment="BOTTOM_LEFT">
+            <padding><Insets bottom="14" left="24" right="24" top="18" /></padding>
+            <HBox fx:id="filtros" alignment="BOTTOM_LEFT" spacing="10">
                 <VBox spacing="6" HBox.hgrow="ALWAYS">
-                    <Label text="Buscar por nombre o código"/>
-                    <TextField fx:id="textoBusqueda" promptText="Ej. cuaderno o T00" onAction="#buscar"/>
+                    <Label text="Buscar por nombre o código" />
+                    <TextField fx:id="textoBusqueda" onAction="#buscar" promptText="Ej. cuaderno o T00" />
                 </VBox>
                 <VBox spacing="6">
-                    <Label text="Categoría"/>
-                    <ComboBox fx:id="filtroCategoria" prefWidth="160"/>
+                    <Label text="Categoría" />
+                    <ComboBox fx:id="filtroCategoria" prefWidth="160" />
                 </VBox>
-                <CheckBox fx:id="soloExistencias" text="Solo con existencias"/>
-                <Button text="Buscar" onAction="#buscar"/>
-                <Button text="Limpiar filtros" onAction="#limpiarFiltros"/>
-                <Button text="Recargar" onAction="#recargar"/>
+                <CheckBox fx:id="soloExistencias" text="Solo con existencias" />
+                <Button onAction="#buscar" text="Buscar" />
+                <Button onAction="#limpiarFiltros" text="Limpiar filtros" />
+                <Button onAction="#recargar" text="Recargar" />
             </HBox>
             <HBox spacing="16" VBox.vgrow="ALWAYS">
                 <VBox spacing="10" HBox.hgrow="ALWAYS">
                     <HBox alignment="CENTER_LEFT" spacing="16">
-                        <Label text="Productos"/>
-                        <Region HBox.hgrow="ALWAYS"/>
-                        <Label fx:id="contador" text="Sin cargar"/>
+                        <Label text="Productos" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label fx:id="contador" text="Sin cargar" />
                     </HBox>
                     <TableView fx:id="tabla" VBox.vgrow="ALWAYS">
                         <columns>
-                            <TableColumn fx:id="colId" text="ID" prefWidth="45"/>
-                            <TableColumn fx:id="colCodigo" text="Código" prefWidth="75"/>
-                            <TableColumn fx:id="colNombre" text="Nombre" prefWidth="225"/>
-                            <TableColumn fx:id="colCategoria" text="Categoría" prefWidth="100"/>
-                            <TableColumn fx:id="colPrecio" text="Precio" prefWidth="100"/>
-                            <TableColumn fx:id="colStock" text="Stock" prefWidth="60"/>
+                            <TableColumn fx:id="colId" prefWidth="45" text="ID" />
+                            <TableColumn fx:id="colCodigo" prefWidth="75" text="Código" />
+                            <TableColumn fx:id="colNombre" prefWidth="225" text="Nombre" />
+                            <TableColumn fx:id="colCategoria" prefWidth="100" text="Categoría" />
+                            <TableColumn fx:id="colPrecio" prefWidth="100" text="Precio" />
+                            <TableColumn fx:id="colStock" prefWidth="60" text="Stock" />
                         </columns>
                     </TableView>
-                    <Label text="Seleccione una fila para editarla o eliminarla."/>
+                    <Label text="Seleccione una fila para editarla o eliminarla." />
                 </VBox>
-                <VBox fx:id="formulario" spacing="9" prefWidth="285" minWidth="285">
-                    <Label fx:id="modo" text="Nuevo producto"/>
-                    <Label text="ID · asignado por PostgreSQL"/>
-                    <TextField fx:id="id" editable="false" focusTraversable="false" promptText="Automático"/>
-                    <Label text="Código *"/>
-                    <TextField fx:id="codigo" promptText="De 1 a 10 caracteres"/>
-                    <Label text="Nombre *"/>
-                    <TextField fx:id="nombre" promptText="De 3 a 80 caracteres"/>
-                    <Label text="Categoría *"/>
-                    <ComboBox fx:id="categoria" promptText="Seleccione una categoría" maxWidth="Infinity"/>
+                <VBox fx:id="formulario" minWidth="285" prefWidth="285" spacing="9">
+                    <Label fx:id="modo" text="Nuevo producto" />
+                    <Label text="ID  " />
+                    <TextField fx:id="id" editable="false" focusTraversable="false" promptText="Automático" />
+                    <Label text="Código *" />
+                    <TextField fx:id="codigo" promptText="De 1 a 10 caracteres" />
+                    <Label text="Nombre *" />
+                    <TextField fx:id="nombre" promptText="De 3 a 80 caracteres" />
+                    <Label text="Categoría *" />
+                    <ComboBox fx:id="categoria" maxWidth="Infinity" promptText="Seleccione una categoría" />
                     <HBox spacing="12">
                         <VBox spacing="6" HBox.hgrow="ALWAYS">
-                            <Label text="Precio C$ *"/>
-                            <TextField fx:id="precio" promptText="0.01" prefWidth="120"/>
+                            <Label text="Precio C$ *" />
+                            <TextField fx:id="precio" prefWidth="120" promptText="0.01" />
                         </VBox>
                         <VBox spacing="6" HBox.hgrow="ALWAYS">
-                            <Label text="Stock *"/>
-                            <TextField fx:id="stock" promptText="0" prefWidth="120"/>
+                            <Label text="Stock *" />
+                            <TextField fx:id="stock" prefWidth="120" promptText="0" />
                         </VBox>
                     </HBox>
-                    <Label text="Use punto decimal. Se permite stock cero." wrapText="true"/>
-                    <Button text="Nuevo / Limpiar formulario" onAction="#nuevo" maxWidth="Infinity"/>
+                    <Label text="Use punto decimal. Se permite stock cero." wrapText="true" />
+                    <Button maxWidth="Infinity" onAction="#nuevo" text="Nuevo / Limpiar formulario" />
                     <HBox spacing="10">
-                        <Button text="Guardar" onAction="#guardar" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
-                        <Button text="Actualizar" onAction="#actualizar" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                        <Button maxWidth="Infinity" onAction="#guardar" text="Guardar" HBox.hgrow="ALWAYS" />
+                        <Button maxWidth="Infinity" onAction="#actualizar" text="Actualizar" HBox.hgrow="ALWAYS" />
                     </HBox>
-                    <Button text="Eliminar seleccionado" onAction="#eliminar" maxWidth="Infinity"/>
+                    <Button maxWidth="Infinity" onAction="#eliminar" text="Eliminar seleccionado" />
                 </VBox>
             </HBox>
-            <Label fx:id="mensaje" text="" wrapText="true" maxWidth="Infinity" minHeight="42"/>
+            <Label fx:id="mensaje" maxWidth="Infinity" minHeight="42" text="" wrapText="true" />
         </VBox>
     </center>
-    <bottom><HBox><padding><Insets right="24" bottom="12" left="24"/></padding><Label fx:id="estado" text="Conectando…"/></HBox></bottom>
+    <bottom><HBox><padding><Insets bottom="12" left="24" right="24" /></padding><Label fx:id="estado" text="Conectando…" /></HBox></bottom>
 </BorderPane>

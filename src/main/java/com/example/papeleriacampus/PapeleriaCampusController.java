@@ -42,8 +42,7 @@ public final class PapeleriaCampusController {
     }
 
     @FXML void initialize() {
-        // Scene Builder integrado en algunos IDE usa JavaFX anterior a 20.
-        // Esta política se configura al ejecutar, para mantener el FXML compatible.
+
         tabla.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN);
         colId.setCellValueFactory(c -> new ReadOnlyIntegerWrapper(c.getValue().idProducto()));
         colCodigo.setCellValueFactory(c -> new ReadOnlyStringWrapper(c.getValue().codigo()));
